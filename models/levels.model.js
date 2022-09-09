@@ -14,4 +14,6 @@ const level_schema =new mongoose.Schema({
         enum:[constants.LEVELS.ALL_LEVEL, constants.LEVELS.DIPLOMA,constants.LEVELS.PG,constants.LEVELS.PHD,constants.LEVELS.UG]
     }
 
-})
+});
+
+module.exports=mongoose.model('level_schema',level_schema);
