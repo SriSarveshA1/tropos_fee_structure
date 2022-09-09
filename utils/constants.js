@@ -15,10 +15,11 @@ module.exports={
         DENTAL:"Dental",
         AYURVEDA:"Ayurveda"
     },
-    ALL_LEVELS:{
+    LEVELS:{
         UG:"UG",
         PG:"PG",
         DIPLOMA:"DIPLOMA",
-        PHD:"Ph.D"
+        PHD:"Ph.D",
+        ALL_LEVEL:"ALL_LEVEL"
     }
 }

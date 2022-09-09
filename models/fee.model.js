@@ -1,4 +1,6 @@
 const mongoose=require('mongoose');
+const constants=require('../utils/constants');
+
 
 const fee_schema=new mongoose.Schema({
     name:{
@@ -9,6 +11,8 @@ const fee_schema=new mongoose.Schema({
     type:{
         type:String,
         required:true,
-        enum:[]
+        enum:[constants.FEE_TYPES.EXAM_FEE, constants.FEE_TYPES.APPLICATION_FEE]
     }
-})
+});
+
+module.exports=mongoose.model('fee_schema',fee_schema);
