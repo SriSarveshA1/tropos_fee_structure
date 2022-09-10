@@ -6,7 +6,7 @@ const fee_schema=new mongoose.Schema({
     name:{
         type:String,
         required:true,
-        default:"Fee"
+        default:"FEE_TYPES"
     },
     type:{
         type:String,

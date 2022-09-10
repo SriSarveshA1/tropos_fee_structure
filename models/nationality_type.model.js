@@ -6,7 +6,7 @@ const nationality_type=new mongoose.Schema({
     name:{
         type:String,
         required:true,
-        default:"Nationality_Type"
+        default:"NATIONALITY_TYPE"
     },
     type:{
         type:String,

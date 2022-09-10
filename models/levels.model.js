@@ -6,7 +6,7 @@ const level_schema =new mongoose.Schema({
     name:{
         type:String,
         required:true,
-        default:"Level"
+        default:"LEVELS"
     },
     type:{
         type:String,
