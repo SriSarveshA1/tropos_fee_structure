@@ -1,267 +1,10 @@
 
                        
 const readline=require('readline-sync');
-const secretConfig = require('./configs/server.configs');
+var {structure_of_fee}=require("./utils/structure_file");
+var {fee_object,nationality_type_object,courses_object, levels_object, amount}=require("./utils/constants");
 
 
-
-
-
-var structure_of_fee={
-    [fee_object['Exam Fee']]:{
-       [nationality_type_object['INDIAN']]:{
-          [courses_object['Ayurveda']]:{
-             [levels_object["UG"]]:{
-               [amount]:400
-             },
-             [levels_object["PG"]]:{
-                [amount]:400
-             },
-             [levels_object["DIPLOMA"]]:{
-                [amount]:400
-             },
-             [levels_object["Ph.D"]]:{
-                [amount]:400
-             }
-          },
-          [courses_object['Dental']]:{
-            [levels_object["UG"]]:{
-                [amount]:400
-            },
-            [levels_object["PG"]]:{
-                [amount]:400
-            },
-            [levels_object["DIPLOMA"]]:{
-                [amount]:400
-            },
-            [levels_object["Ph.D"]]:{
-                [amount]:400
-            }
-          },
-          [courses_object['Medical']]:{
-            [levels_object["UG"]]:{
-                [amount]:400
-            },
-            [levels_object["PG"]]:{
-                [amount]:400
-            },
-            [levels_object["DIPLOMA"]]:{
-                [amount]:400
-            },
-            [levels_object["Ph.D"]]:{
-                [amount]:400
-            }
-          }
-       },
-       [nationality_type_object['FOREIGN']]:{
-        [courses_object['Ayurveda']]:{
-            [levels_object["UG"]]:{
-                [amount]:100
-            },
-            [levels_object["PG"]]:{
-                [amount]:100
-            },
-            [levels_object["DIPLOMA"]]:{
-                [amount]:100
-            },
-            [levels_object["Ph.D"]]:{
-                [amount]:100
-            }
-        },
-        [courses_object['Dental']]:{
-            [levels_object["UG"]]:{
-                [amount]:100
-            },
-            [levels_object["PG"]]:{
-                [amount]:100
-            },
-            [levels_object["DIPLOMA"]]:{
-                [amount]:100
-            },
-            [levels_object["Ph.D"]]:{
-                [amount]:100
-            }
-        },
-        [courses_object['Medical']]:{
-            [levels_object["UG"]]:{
-                [amount]:100
-            },
-            [levels_object["PG"]]:{
-                [amount]:100
-            },
-            [levels_object["DIPLOMA"]]:{
-                [amount]:100
-            },
-            [levels_object["Ph.D"]]:{
-                [amount]:100
-            }
-        }
-       },
-       [nationality_type_object['NRI']]:{
-        [courses_object['Ayurveda']]:{
-            [levels_object["UG"]]:{
-                [amount]:600
-            },
-            [levels_object["PG"]]:{
-                [amount]:600
-            },
-            [levels_object["DIPLOMA"]]:{
-                [amount]:600
-            },
-            [levels_object["Ph.D"]]:{
-                [amount]:600
-            }
-        },
-        [courses_object['Dental']]:{
-            [levels_object["UG"]]:{
-                [amount]:600
-            },
-            [levels_object["PG"]]:{
-                [amount]:600
-            },
-            [levels_object["DIPLOMA"]]:{
-                [amount]:600
-            },
-            [levels_object["Ph.D"]]:{
-                [amount]:600
-            }
-        },
-        [courses_object['Medical']]:{
-            [levels_object["UG"]]:{
-                [amount]:600
-            },
-            [levels_object["PG"]]:{
-                [amount]:600
-            },
-            [levels_object["DIPLOMA"]]:{
-                [amount]:600
-            },
-            [levels_object["Ph.D"]]:{
-                [amount]:600
-            }
-        }
-       },
-       [nationality_type_object['SAARC']]:{
-        [courses_object['Ayurveda']]:{
-            [levels_object["UG"]]:{
-                [amount]:600
-            },
-            [levels_object["PG"]]:{
-                [amount]:600
-            },
-            [levels_object["DIPLOMA"]]:{
-                [amount]:600
-            },
-            [levels_object["Ph.D"]]:{
-                [amount]:600
-            }
-        },
-        [courses_object['Dental']]:{
-            [levels_object["UG"]]:{
-                [amount]:600
-            },
-            [levels_object["PG"]]:{
-                [amount]:600
-            },
-            [levels_object["DIPLOMA"]]:{
-                [amount]:600
-            },
-            [levels_object["Ph.D"]]:{
-                [amount]:600
-            }
-        },
-        [courses_object['Medical']]:{
-            [levels_object["UG"]]:{
-                [amount]:600
-            },
-            [levels_object["PG"]]:{
-                [amount]:600
-            },
-            [levels_object["DIPLOMA"]]:{
-                [amount]:600
-            },
-            [levels_object["Ph.D"]]:{
-                [amount]:600
-            }
-        }
-       }
-    },
-    [fee_object['Application Fee']]:{
-        [nationality_type_object['INDIAN']]:{
-            [courses_object['Ayurveda']]:{
-                [levels_object["UG"]]:{
-                    [amount]:200
-                },
-                [levels_object["PG"]]:{
-                    [amount]:500
-                },
-                [levels_object["DIPLOMA"]]:{
-                    [amount]:300
-                }
-                
-            },
-            [courses_object['Dental']]:{
-                [levels_object["UG"]]:{
-                    [amount]:200
-                },
-                [levels_object["PG"]]:{
-                    [amount]:500
-                },
-                [levels_object["DIPLOMA"]]:{
-                    [amount]:300
-                }
-            },
-            [courses_object['Medical']]:{
-                [levels_object["UG"]]:{
-                    [amount]:200
-                },
-                [levels_object["PG"]]:{
-                    [amount]:500
-                },
-                [levels_object["DIPLOMA"]]:{
-                    [amount]:300
-                },
-               
-            }
-        },
-        [nationality_type_object['FOREIGN']]:{
-            [courses_object['Ayurveda']]:{
-                [levels_object["UG"]]:{
-                    [amount]:400
-                },
-                [levels_object["PG"]]:{
-                    [amount]:700
-                },
-                [levels_object["DIPLOMA"]]:{
-                    [amount]:400
-                }
-            },
-            [courses_object['Dental']]:{
-                [levels_object["UG"]]:{
-                    [amount]:400
-                },
-                [levels_object["PG"]]:{
-                    [amount]:700
-                },
-                [levels_object["DIPLOMA"]]:{
-                    [amount]:400
-                }
-            },
-            [courses_object['Medical']]:{
-                [levels_object["UG"]]:{
-                    [amount]:400
-                },
-                [levels_object["PG"]]:{
-                    [amount]:700
-                },
-                [levels_object["DIPLOMA"]]:{
-                    [amount]:400
-                }
-            }
-        }
-    }
-
-}
 
 
 function to_return_nationality(fee_type)
@@ -298,6 +41,14 @@ function to_return_level()
 
 
 
+function final_ans(fee_type,nationality_type_,course_type,level_type)
+{
+
+    
+}
+
+
+
 
     var fee_type,nationality_type_,course_type,level_type;  
     fee_type=readline.question("Enter the fee Type "+fee_object['Exam Fee'] +" or "+fee_object['Application Fee']+"(Enter exactly) = ");
@@ -310,7 +61,13 @@ function to_return_level()
             if(course_type)
             {
                level_type=to_return_level();
-
+               if(level_type)
+               {
+                final_ans(fee_type,nationality_type_,course_type,level_type);
+               }
+               else{
+                console.log("Wrong Input Data of level type");
+               }
             }
             else{
                 console.log("Wrong Input Data of course")
