@@ -21,7 +21,8 @@ module.exports={
             "UG":"UG",
             "PG":"PG",
             "DIPLOMA":"DIPLOMA",
-            "Ph.D":"Ph.D"
+            "Ph.D":"Ph.D",
+            "UG-DIPLOMA":"UG-DIPLOMA"
         
     },
     amount:"amount"

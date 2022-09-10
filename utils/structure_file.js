@@ -1,4 +1,4 @@
-
+var {fee_object,nationality_type_object,courses_object, levels_object, amount}=require("./constants");
 var structure_of_fee={
     [fee_object['Exam Fee']]:{
        [nationality_type_object['INDIAN']]:{
@@ -187,7 +187,7 @@ var structure_of_fee={
                 [levels_object["PG"]]:{
                     [amount]:500
                 },
-                [levels_object["DIPLOMA"]]:{
+                [levels_object["UG-DIPLOMA"]]:{
                     [amount]:300
                 }
                 
@@ -199,7 +199,7 @@ var structure_of_fee={
                 [levels_object["PG"]]:{
                     [amount]:500
                 },
-                [levels_object["DIPLOMA"]]:{
+                [levels_object["UG-DIPLOMA"]]:{
                     [amount]:300
                 }
             },
@@ -210,7 +210,7 @@ var structure_of_fee={
                 [levels_object["PG"]]:{
                     [amount]:500
                 },
-                [levels_object["DIPLOMA"]]:{
+                [levels_object["UG-DIPLOMA"]]:{
                     [amount]:300
                 },
                
@@ -224,7 +224,7 @@ var structure_of_fee={
                 [levels_object["PG"]]:{
                     [amount]:700
                 },
-                [levels_object["DIPLOMA"]]:{
+                [levels_object["UG-DIPLOMA"]]:{
                     [amount]:400
                 }
             },
@@ -235,7 +235,7 @@ var structure_of_fee={
                 [levels_object["PG"]]:{
                     [amount]:700
                 },
-                [levels_object["DIPLOMA"]]:{
+                [levels_object["UG-DIPLOMA"]]:{
                     [amount]:400
                 }
             },
@@ -246,7 +246,7 @@ var structure_of_fee={
                 [levels_object["PG"]]:{
                     [amount]:700
                 },
-                [levels_object["DIPLOMA"]]:{
+                [levels_object["UG-DIPLOMA"]]:{
                     [amount]:400
                 }
             }
