@@ -25,7 +25,7 @@ Project has Utils folder and files like server.js(where the entire logic is pres
 
 
 1. So There is Utils folder where constants file and structure of the whole js object(from where we do computation) is present.
-2. Then there is server.js file where the user input logic and the fee retrival based on the conditions is present
+2. Then there is server.js file where the user input logic and the fee retrival (based on the conditions) is present
 
 
 
