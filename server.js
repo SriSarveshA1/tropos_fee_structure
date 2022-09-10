@@ -5,7 +5,8 @@ var {structure_of_fee}=require("./utils/structure_file");
 var {fee_object,nationality_type_object,courses_object, levels_object, amount}=require("./utils/constants");
 
 
-var reference_to_the_json=JSON.stringify(structure_of_fee);//This holds the reference to JSON object mentioned in the problem statement.
+var reference_to_the_json=JSON.stringify(structure_of_fee);//This holds the reference to JSON stringify mentioned in the problem statement.
+console.log(typeof reference_to_the_json);
 
 function to_return_nationality(fee_type)
 {
@@ -48,7 +49,7 @@ function to_return_nationality(fee_type)
 
 function to_return_courses()
 {
-    //So what ever may be nationality_type or Fee_Type the courses offered are same
+    //So what ever may be nationality_type or Fee_Type the courses offered are same(thats what specified in the json given in the question description)
 
     var option=readline.question("Enter the option 1 for "+courses_object['Ayurveda']+" option 2 for "+courses_object['Dental']+" option 3 for "+courses_object['Medical']+" = ");
     option=parseInt(option);
