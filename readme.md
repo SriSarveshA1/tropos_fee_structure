@@ -8,13 +8,13 @@
 
 ---
 
-- This application asks the INPUT from the user about the Type of Fee Enter the options ,option 1 for Exam Fee and option 2 for Application Fee
+- This application asks the INPUT from the user about the Type of Fee, Enter the options ,[option 1 for Exam Fee] and [option 2 for Application Fee]
 - Then after entering the Fee type ,the Nationality type is being asked from the user 
-- If the Fee type is Exam fee then the options for Nationality Types are Enter the options 1 for INDIAN  option 2 for FOREIGN option 3 for NRI option 4 for SAARC
-- If the Fee type is Application Fee then the options for Nationality Types are Enter the options 1 for INDIAN option 2 for FOREIGN
-- Then after that user is asked to enter the course Enter the option 1 for Ayurveda option 2 for Dental option 3 for Medical
-- Then after the course is entered then the levels will be asked to enter Enter the option 1 for DIPLOMA option 2 for PG option 3 for Ph.D option 4 for UG -for Exam Fee (selection)
-- Or Enter the option 1 for UG-DIPLOMA option 2 for PG option 3 for UG  - for Application Fee (selection)
+- If the Fee type is Exam fee then the options for Nationality Types are Enter the [option 1 for INDIAN] ,[option 2 for FOREIGN] ,[option 3 for NRI],[option 4 for SAARC]
+- If the Fee type is Application Fee then the options for Nationality Types are Enter the [option 1 for INDIAN],[option 2 for FOREIGN]
+- Then after that user is asked to enter the course [Enter the option 1 for Ayurveda],[option 2 for Dental],[option 3 for Medical].
+- Then after the course is entered then the levels will be asked to enter Enter the [option 1 for DIPLOMA],[option 2 for PG],[option 3 for Ph.D],[option 4 for UG] -for Exam Fee (selection)
+- Or Enter the [option 1 for UG-DIPLOMA],[option 2 for PG],[option 3 for UG] - for Application Fee (selection)
 
 ### Code organisation in the repository-
 
