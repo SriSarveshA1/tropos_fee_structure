@@ -6,7 +6,7 @@ var {fee_object,nationality_type_object,courses_object, levels_object, amount}=r
 
 
 var reference_to_the_json=JSON.stringify(structure_of_fee);//This holds the reference to JSON stringify mentioned in the problem statement.
-console.log(typeof reference_to_the_json);
+//console.log(typeof reference_to_the_json);
 
 function to_return_nationality(fee_type)
 {
