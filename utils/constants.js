@@ -1,25 +1,29 @@
 module.exports={
-    FEE_TYPES:{
-        EXAM_FEE:"Exam Fee",
-        APPLICATION_FEE:"Application Fee"
+    fee_object:{
+        "Exam Fee":"Exam Fee",
+        "Application Fee":"Application Fee"
     },
-    NATIONALITY_TYPE:{
-         INDIAN:"INDIAN",
-         FOREIGN:"FOREIGN",
-         NRI:"NRI",
-         SAARC:"SAARC"
+    
+    nationality_type_object:{
+        "INDIAN":"INDIAN",
+        "FOREIGN":"FOREIGN",
+        "NRI":"NRI",
+        "SAARC":"SAARC"
     },
-    COURSE_TYPE:{
-        ALL_COURSES:"ALL_COURSES​",
-        MEDICAL:"MEDICAL",
-        DENTAL:"Dental",
-        AYURVEDA:"Ayurveda"
+    
+    courses_object:{
+        "Medical":"Medical",
+        "Dental":"Dental",
+        "Ayurveda":"Ayurveda"
     },
-    LEVELS:{
-        UG:"UG",
-        PG:"PG",
-        DIPLOMA:"DIPLOMA",
-        PHD:"Ph.D",
-        ALL_LEVEL:"ALL_LEVEL"
-    }
+    
+    levels_object:{
+            "UG":"UG",
+            "PG":"PG",
+            "DIPLOMA":"DIPLOMA",
+            "Ph.D":"Ph.D"
+        
+    },
+    amount:"amount"
 }
+
